@@ -17,79 +17,88 @@ import ImageCardGrid from "../components/ImageCardGrid.astro";
   <MenuBar />
   <main>
     <div id="home" class="header">
-      <div>
-        <span class="text-gradient">Kaung Khant Kyaw</span>
-        <h1>Software Developer</h1>
-        <span
-          >Over <span class="important-text">Four Years</span> of Experience
-        </span>
-      </div>
+      <img src="/images/profile.png" alt="Kaung Khant Kyaw" class="profile" />
+
+      <span class="text-gradient">Kaung Khant Kyaw</span>
+      <h1>Software Developer</h1>
+      <span>
+        Over <span class="important-text">Five Years</span> of Experience
+      </span>
+
+      <p class="intro">
+        I specialize in creating visually appealing and user-friendly
+        <span class="important-text">websites and mobile apps.</span> Known for understanding
+        client needs and delivering on time, I thrive on collaboration and continuous
+        learning.
+      </p>
+
+      <p class="important-text">
+        ‟ I completed a B.C.Sc at the University of Computer Studies, Yangon,
+        from Dec 2013 to Aug 2019. ”
+      </p>
     </div>
-    <p class="intro">
-      I specialize in creating visually appealing and user-friendly <span
-        class="important-text">websites and mobile apps.</span
-      >
-    </p>
-    <p class="intro">
-      Known for understanding client needs and delivering on time, I thrive on
-      collaboration and continuous learning.
-    </p>
-    <p class="important-text">
-      ‟ I completed a B.C.Sc at the University of Computer Studies, Yangon, from
-      October 2019 to March 2024. ”
-    </p>
-    <CategoryGrid datalist={skillData} />
-    <h2 id="experience" class="icon-header">
-      Experience
-      <a href="/experience">
-        <img src="/icons/more.svg" alt="More" />
-      </a>
-    </h2>
-    <CardGrid datalist={workData} showFav={true} />
-    <h2 id="resources" class="icon-header">
-      Projects
-      <a href="/projects">
-        <img src="/icons/more.svg" alt="More" />
-      </a>
-    </h2>
-    <CardGrid datalist={projectData} showFav={true} />
-    <h2 class="icon-header">
-      NPM Packages
-      <a href="https://www.npmjs.com/~kaung_khant" target="_blank">
-        <img src="/icons/npm.svg" alt="NPM" />
-      </a>
-    </h2>
-    <ImageCardGrid datalist={npmPackageData} />
-    <h2>Dart Packages</h2>
-    <ImageCardGrid datalist={dartPackageData} />
-    <h2 id="certifications">Certifications</h2>
-    <LinkGrid datalist={certificateData} />
-    <hr />
-    <div id="contact" class="icon-grid">
-      <a href="mailto:kaungkhant19297@gmail.com" target="_blank">
-        <p class="important-text">Gmail</p>
-        <img src="/icons/gmail.svg" alt="Gmail" class="icon" />
-      </a>
-      <a href="https://linkedin.com/in/kaungkhantkyaw-feb97" target="_blank">
-        <p class="important-text">LinkedIn</p>
-        <img src="/icons/linkedin.svg" alt="LinkedIn" class="icon" />
-      </a>
-      <a href="https://github.com/KaungKhantKyaw1997" target="_blank">
-        <p class="important-text">GitHub</p>
-        <img src="/icons/github.svg" alt="GitHub" class="icon" />
-      </a>
-      <a href="https://hackerrank.com/kaungkhant19297" target="_blank">
-        <p class="important-text">HackerRank</p>
-        <img src="/icons/hackerrank.svg" alt="HackerRank" class="icon" />
-      </a>
-      <a href="https://wa.me/+959782227894" target="_blank">
-        <p class="important-text">WhatsApp</p>
-        <img src="/icons/whatsapp.svg" alt="WhatsApp" class="icon" />
-      </a>
-      <a href="https://line.me/ti/p/~kaungkhant19297" target="_blank">
-        <p class="important-text">LINE</p>
-        <img src="/icons/line.svg" alt="LINE" class="icon" />
-      </a>
+
+    <div id="content">
+      <CategoryGrid datalist={skillData} />
+
+      <h2 id="experience" class="icon-header">
+        Experience
+        <a href="/experience">
+          <img src="/icons/more.svg" alt="More" />
+        </a>
+      </h2>
+      <CardGrid datalist={workData} showFav={true} />
+
+      <h2 id="resources" class="icon-header">
+        Projects
+        <a href="/projects">
+          <img src="/icons/more.svg" alt="More" />
+        </a>
+      </h2>
+      <CardGrid datalist={projectData} showFav={true} />
+
+      <h2 class="icon-header">
+        NPM Packages
+        <a href="https://www.npmjs.com/~kaung_khant" target="_blank">
+          <img src="/icons/npm.svg" alt="NPM" />
+        </a>
+      </h2>
+      <ImageCardGrid datalist={npmPackageData} />
+
+      <h2>Dart Packages</h2>
+      <ImageCardGrid datalist={dartPackageData} />
+
+      <h2 id="certifications">Certifications</h2>
+      <LinkGrid datalist={certificateData} />
+
+      <hr />
+
+      <div id="contact" class="icon-grid">
+        <a href="mailto:kaungkhant19297@gmail.com" target="_blank">
+          <p class="important-text">Gmail</p>
+          <img src="/icons/gmail.svg" alt="Gmail" class="icon" />
+        </a>
+        <a href="https://linkedin.com/in/kaungkhantkyaw-feb97" target="_blank">
+          <p class="important-text">LinkedIn</p>
+          <img src="/icons/linkedin.svg" alt="LinkedIn" class="icon" />
+        </a>
+        <a href="https://github.com/KaungKhantKyaw1997" target="_blank">
+          <p class="important-text">GitHub</p>
+          <img src="/icons/github.svg" alt="GitHub" class="icon" />
+        </a>
+        <a href="https://hackerrank.com/kaungkhant19297" target="_blank">
+          <p class="important-text">HackerRank</p>
+          <img src="/icons/hackerrank.svg" alt="HackerRank" class="icon" />
+        </a>
+        <a href="https://wa.me/+959782227894" target="_blank">
+          <p class="important-text">WhatsApp</p>
+          <img src="/icons/whatsapp.svg" alt="WhatsApp" class="icon" />
+        </a>
+        <a href="https://line.me/ti/p/~kaungkhant19297" target="_blank">
+          <p class="important-text">LINE</p>
+          <img src="/icons/line.svg" alt="LINE" class="icon" />
+        </a>
+      </div>
     </div>
   </main>
 </Layout>
@@ -103,10 +112,25 @@ import ImageCardGrid from "../components/ImageCardGrid.astro";
   }
 
   .header {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     margin-top: 4rem;
+  }
+
+  .profile {
+    float: right;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--secondary-black);
+    shape-outside: circle();
+    -webkit-shape-outside: circle();
+    margin-left: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .intro {
+    margin: 1rem 0;
   }
 
   .icon-grid {
@@ -149,32 +173,9 @@ import ImageCardGrid from "../components/ImageCardGrid.astro";
     animation: bounce 0.5s;
   }
 
-  .intro {
-    margin-left: 0.1rem;
-    margin-right: 0.1rem;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .ed {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .ed-text {
-    text-align: end;
-  }
-
-  @media (max-width: 600px) {
-    .icon-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
   hr {
     max-width: 30rem;
+    border-width: 0.1px;
     border-width: 0.1px;
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -193,6 +194,25 @@ import ImageCardGrid from "../components/ImageCardGrid.astro";
     }
     60% {
       transform: translateY(-5px);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .profile {
+      float: none;
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 120px;
+      height: 120px;
+      shape-outside: none;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .icon-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 </style>
